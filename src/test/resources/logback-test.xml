@@ -1,0 +1,30 @@
+<!--
+  ~   D:/GLONASS/DEV/branches/GMP_R6.0-FCC_R4.0/FCC/SourceCode/fcc/new_management_subsystem/src/test/resources/logback-test.xml
+  ~
+  ~    This file contains JSC GLONASS intellectual property. It may contain information about JSC GLONASS processes that are part of the Company's
+  ~    competitive advantage.
+  ~
+  ~    Copyright (c) 2017, JSC GLONASS . All Rights Reserved
+  ~
+  ~    Данный Файл содержит информацию, являющуюся интеллектуальной собственностью АО "Глонасс".
+  ~    Он также может содержать информацию о процессах, представляющих конкурентное преимущество компании.
+  ~
+  ~    © 2017 АО "Глонасс". Все права защищены.
+  -->
+
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="org.testcontainers" level="INFO"/>
+    <logger name="org.apache.http" level="WARN"/>
+    <logger name="com.github.dockerjava" level="WARN"/>
+    <logger name="org.zeroturnaround.exec" level="WARN"/>
+</configuration>
